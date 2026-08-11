@@ -11,7 +11,7 @@ A simple Laravel and React application for tracking client projects, statuses, p
 - PostgreSQL
 - Pest
 
-## Setup
+## Setup Instructions
 
 1. Install PHP dependencies.
 
@@ -82,11 +82,11 @@ npm run types:check
 npm run lint:check
 ```
 
-## Technical Reflection
-
-### What Was Built
+## Features Implemented
 
 I built a client project tracker with CRUD API endpoints, a React project list, create/edit forms, delete confirmation, loading states, and validation for required fields, enum values, and date order.
+
+## Technical Reflection
 
 ### Technical Decisions
 
@@ -103,3 +103,9 @@ The project list shows an animated loading state while data is fetched. Edit mod
 ### Tradeoffs And Next Steps
 
 For this assessment-sized app, the implementation favors straightforward code over heavier abstractions. Given more time, I would add full API feature tests with a project factory, field-level frontend validation errors, pagination or filtering for large project lists, and deployment notes.
+
+## Assumptions Made
+
+- PostgreSQL is available locally and credentials can be configured through `.env`.
+- The tracker is intended for an assessment-sized dataset, so pagination and advanced filtering are left as next steps.
+- The API intentionally uses the web routes shown above rather than an `/api` prefix.
